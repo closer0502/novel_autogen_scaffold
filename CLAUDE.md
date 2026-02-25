@@ -21,6 +21,7 @@
 | `backbone/` | テーマ・年表・相関図 |
 | `style/` | 文体ガイド・用語集 |
 | `drafts/` | 執筆原稿 |
+| `drafts/summaries/` | 各章の要約（章間の記憶引き継ぎ用） |
 
 ## 執筆時の注意
 
@@ -29,3 +30,15 @@
 3. 新しい固有名詞を出したら `style/glossary.md` に追加すること
 4. 設定矛盾を避けるため、関連する `world/` と `backbone/timeline.md` を参照すること
 5. キャラクターを新規追加した場合は `backbone/relationships.md` も更新すること
+6. **各章の執筆完了後、`drafts/summaries/chXX_summary.md` に要約を作成すること**
+7. **新しい章の執筆前に、過去の全章の要約（`drafts/summaries/`）を確認すること**
+
+## コンテキスト管理について
+
+LLMのコンテキストウィンドウには上限があるため、過去の章の本文すべてを参照することはできません。
+代わりに以下の「記憶ファイル」を必ず参照してから執筆に入ること：
+
+- `drafts/summaries/` — 過去章の要約
+- `backbone/timeline.md` — 時系列の整合性
+- `backbone/relationships.md` — 人間関係の現在の状態
+- `style/glossary.md` — 用語の一貫性
