@@ -15,30 +15,21 @@
 
 | ディレクトリ | 内容 |
 |-------------|------|
-| `synopsis/` | あらすじ・プロット |
+| `synopsis/` | あらすじ・プロット 、現状把握用|
 | `characters/` | キャラクター設定 |
-| `world/` | 世界観設定 |
+| `world/` | 世界観設定・用語集 |
 | `backbone/` | テーマ・年表・相関図 |
-| `style/` | 文体ガイド・用語集 |
+| `style/` | 文体ガイド |
 | `drafts/` | 執筆原稿 |
-| `drafts/summaries/` | 各章の要約（章間の記憶引き継ぎ用） |
+
+
+`drafts/`の中はユーザーからの要望がない限り読まないでください。コンテクストトークンの無駄になります。
+
 
 ## 執筆時の注意
 
-1. 新しい章を書く前に、必ず `synopsis/outline.md` と該当章の `synopsis/chapters/chXX.md` を確認すること
-2. キャラの口調は `characters/` 内の各ファイルの「口調・話し方」セクションに従うこと
-3. 新しい固有名詞を出したら `style/glossary.md` に追加すること
-4. 設定矛盾を避けるため、関連する `world/` と `backbone/timeline.md` を参照すること
-5. キャラクターを新規追加した場合は `backbone/relationships.md` も更新すること
-6. **各章の執筆完了後、`drafts/summaries/chXX_summary.md` に要約を作成すること**
-7. **新しい章の執筆前に、過去の全章の要約（`drafts/summaries/`）を確認すること**
-
-## コンテキスト管理について
-
-LLMのコンテキストウィンドウには上限があるため、過去の章の本文すべてを参照することはできません。
-代わりに以下の「記憶ファイル」を必ず参照してから執筆に入ること：
-
-- `drafts/summaries/` — 過去章の要約
-- `backbone/timeline.md` — 時系列の整合性
-- `backbone/relationships.md` — 人間関係の現在の状態
-- `style/glossary.md` — 用語の一貫性
+1. 新しい章を書く前に、必ず `synopsis/` を確認すること(ファイルが存在しない場合は無視)
+2. `characters/`, `world/`, `backbone/`など書くために必要な情報にアクセスしてください。(上のファイル構成から)
+   - ただし `characters/` を参照・編集する場合は、先に必ず `characters/README.md` を読むこと
+3. 執筆スタイルは`style/`を読んでください。
+4. 新しい物語は`drafts/story/chXX_xxx.md`という命名規則で適切な命名をして書いてください。
